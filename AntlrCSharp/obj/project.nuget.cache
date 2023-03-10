@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Fm7NnzOc73Pv6uIqfm60XUa4Xe18s1gx/+PgLxkZ730+Cd1mfqeASpvjghQ6kYILtNcuvgQoUAdWrS4Rgzk7Ew==",
+  "dgSpecHash": "Zkk/c8Xk24qaJrlI7RaVXx2NdF+j8F0XbkDbtDR7Xh1MRmJX+Lx+OYfQostEchsh19Lms5rxD9hO/5Jrk5q7MA==",
   "success": true,
-  "projectFilePath": "C:\\tmp\\Antlr\\New3\\AntlrCSharp\\AntlrCSharp.csproj",
+  "projectFilePath": "/home/kali/Documents/AntlrProject/Test/AntlrTest/AntlrCSharp/AntlrCSharp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Theis\\.nuget\\packages\\antlr4.runtime.standard\\4.9.2\\antlr4.runtime.standard.4.9.2.nupkg.sha512"
+    "/home/kali/.nuget/packages/antlr4.runtime.standard/4.9.2/antlr4.runtime.standard.4.9.2.nupkg.sha512",
+    "/home/kali/.nuget/packages/microsoft.netcore.app.ref/6.0.8/microsoft.netcore.app.ref.6.0.8.nupkg.sha512",
+    "/home/kali/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.8/microsoft.aspnetcore.app.ref.6.0.8.nupkg.sha512",
+    "/home/kali/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.8/microsoft.netcore.app.host.linux-x64.6.0.8.nupkg.sha512"
   ],
   "logs": []
 }
