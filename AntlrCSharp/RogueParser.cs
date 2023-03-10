@@ -37,7 +37,7 @@ public partial class RogueParser : Parser {
 	protected static PredictionContextCache sharedContextCache = new PredictionContextCache();
 	public const int
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, INT=7, OPERATOR=8, ID=9, 
-		DIGIT=10, WS=11, Types=12;
+		DIGIT=10, Types=11, WS=12;
 	public const int
 		RULE_calc = 0, RULE_statements = 1, RULE_statement = 2, RULE_stat = 3, 
 		RULE_block = 4, RULE_identifierDecleration = 5, RULE_expression = 6, RULE_auxillary = 7, 
@@ -52,7 +52,7 @@ public partial class RogueParser : Parser {
 	};
 	private static readonly string[] _SymbolicNames = {
 		null, null, null, null, null, null, null, "INT", "OPERATOR", "ID", "DIGIT", 
-		"WS", "Types"
+		"Types", "WS"
 	};
 	public static readonly IVocabulary DefaultVocabulary = new Vocabulary(_LiteralNames, _SymbolicNames);
 
@@ -630,7 +630,7 @@ public partial class RogueParser : Parser {
 		':', '\xF', '\x3', '\x2', '\x2', '\x2', ';', '>', '\a', '\t', '\x2', '\x2', 
 		'<', '>', '\x5', '\xE', '\b', '\x2', '=', ';', '\x3', '\x2', '\x2', '\x2', 
 		'=', '<', '\x3', '\x2', '\x2', '\x2', '>', '\x11', '\x3', '\x2', '\x2', 
-		'\x2', '?', '@', '\a', '\xE', '\x2', '\x2', '@', '\x13', '\x3', '\x2', 
+		'\x2', '?', '@', '\a', '\r', '\x2', '\x2', '@', '\x13', '\x3', '\x2', 
 		'\x2', '\x2', '\a', '\x1B', '\'', '-', '\x39', '=',
 	};
 

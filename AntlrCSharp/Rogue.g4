@@ -48,7 +48,7 @@ OPERATOR: '+' | '-' | '*' | '/';
 ID: LETTER (LETTER | DIGIT)*;
 
 DIGIT: DIGIT_RULE;
-
+Types: Types_Rule;
 // Whitespace
 WS: [ \t\r\n]+ -> skip;
 
@@ -57,7 +57,7 @@ fragment LETTER: [A-z];
 fragment DIGIT_RULE
     :'0'
     | '1'..'9' '0'..'9'*;
-fragment Types
+fragment Types_Rule
     : 'char'
     | 'int'
     | 'float'
