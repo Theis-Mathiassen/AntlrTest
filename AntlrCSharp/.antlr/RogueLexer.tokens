@@ -1,0 +1,6 @@
+INT=1
+OPERATOR=2
+ID=3
+DIGIT=4
+WS=5
+'+'=2

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fm7NnzOc73Pv6uIqfm60XUa4Xe18s1gx/+PgLxkZ730+Cd1mfqeASpvjghQ6kYILtNcuvgQoUAdWrS4Rgzk7Ew==",
+  "success": true,
+  "projectFilePath": "C:\\tmp\\Antlr\\New3\\AntlrCSharp\\AntlrCSharp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Theis\\.nuget\\packages\\antlr4.runtime.standard\\4.9.2\\antlr4.runtime.standard.4.9.2.nupkg.sha512"
+  ],
+  "logs": []
+}
