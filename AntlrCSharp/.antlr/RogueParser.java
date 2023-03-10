@@ -17,7 +17,7 @@ public class RogueParser extends Parser {
 		new PredictionContextCache();
 	public static final int
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, INT=7, OPERATOR=8, ID=9, 
-		DIGIT=10, WS=11, Types=12;
+		DIGIT=10, Types=11, WS=12;
 	public static final int
 		RULE_calc = 0, RULE_statements = 1, RULE_statement = 2, RULE_stat = 3, 
 		RULE_block = 4, RULE_identifierDecleration = 5, RULE_expression = 6, RULE_auxillary = 7, 
@@ -39,7 +39,7 @@ public class RogueParser extends Parser {
 	private static String[] makeSymbolicNames() {
 		return new String[] {
 			null, null, null, null, null, null, null, "INT", "OPERATOR", "ID", "DIGIT", 
-			"WS", "Types"
+			"Types", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -521,7 +521,7 @@ public class RogueParser extends Parser {
 		"\60\61\7\b\2\2\61\13\3\2\2\2\62\63\5\22\n\2\63\64\7\13\2\2\64\r\3\2\2"+
 		"\2\65\66\7\t\2\2\66\67\7\n\2\2\67:\5\16\b\28:\7\t\2\29\65\3\2\2\298\3"+
 		"\2\2\2:\17\3\2\2\2;>\7\t\2\2<>\5\16\b\2=;\3\2\2\2=<\3\2\2\2>\21\3\2\2"+
-		"\2?@\7\16\2\2@\23\3\2\2\2\7\33\'-9=";
+		"\2?@\7\r\2\2@\23\3\2\2\2\7\33\'-9=";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
