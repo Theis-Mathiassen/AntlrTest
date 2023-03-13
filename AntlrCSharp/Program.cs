@@ -7,7 +7,7 @@ try {
     StringBuilder text = new StringBuilder();
     Console.WriteLine("Input the chat.");
     //string input = Console.ReadLine() ?? "";
-    string input = "1+2+3;";
+    string input = "{if(1<3&&2==2){1+2+3;}}";
     // to type the EOF character and end the input: use CTRL+D, then press <enter>
     //while ((input = Console.ReadLine()) != "u0004")
     //{

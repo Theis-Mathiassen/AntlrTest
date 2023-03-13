@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from c:\tmp\Antlr\New3\AntlrCSharp\Rogue.g4 by ANTLR 4.9.2
+// Generated from /home/kali/Documents/AntlrProject/Test/AntlrTest/AntlrCSharp/Rogue.g4 by ANTLR 4.9.2
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -61,6 +61,12 @@ public interface IRogueVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
 	Result VisitBlock([NotNull] RogueParser.BlockContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="RogueParser.lexpr"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitLexpr([NotNull] RogueParser.LexprContext context);
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="RogueParser.identifierDecleration"/>.
 	/// </summary>

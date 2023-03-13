@@ -5,7 +5,7 @@ grammar Rogue;
 // **
 
 
-calc: statements EOF;
+calc: block EOF;
 
 statements: statement | statement statements;
 
@@ -13,10 +13,20 @@ statement: expression ';';
 
 //Expressions: Expression Expressions;
 
-stat: 'while' '(' expression ')' stat // match WHILE statement
+stat: 'while' '(' lexpr ')' block // match WHILE statement
+| 'if' '(' lexpr ')' block
 | block // match a block of statements
+| expression ';'
 ;
 block: '{' stat* '}' ;
+
+lexpr
+ : expression CompareOperator expression
+ | LogicalUnaryOperator lexpr
+ | lexpr LogicalBinaryOperator lexpr
+ ;
+
+
 
 identifierDecleration
     : type ID;
@@ -25,6 +35,7 @@ expression
  : INT OPERATOR expression   #NormalExpression
  | INT                      #IntExpression
  ;
+
 
 auxillary
     : INT           #IntAux
@@ -44,6 +55,9 @@ type
 
 INT: DIGIT;
 OPERATOR: '+' | '-' | '*' | '/';
+CompareOperator: '<' | '>' | '==';
+LogicalUnaryOperator: '!';
+LogicalBinaryOperator: '&&' | '||' | '^';
 
 ID: LETTER (LETTER | DIGIT)*;
 
